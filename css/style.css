@@ -73,6 +73,12 @@ body {
 .header {
     background-color: #424F60;
     margin: 0 14px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    border-bottom: 4px solid #fff;
     
 }
 
@@ -137,16 +143,21 @@ body {
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-columns: 114px auto;
-    margin-top: 4px;
-    /* overflow-x: scroll; */
+    grid-template-columns: 114px auto 347px;
+    /* padding-top: 4px; */
+
 }
 
 .main_content_left_side {
-    width: 100%;
-    height: auto;
+    height: 100vh;
     background-color: #444F61;
+    position: fixed;
+    left: 0px;
+    width: 114px;
 }
+
+
+
 .main_content_left_side button{
     display: block;
     border: transparent;
@@ -161,6 +172,10 @@ body {
 }
 
 
+.main_content_main_header {
+    margin-bottom: 87px;
+}
+
 
 .main_content_header {
     width: 100%;
@@ -171,7 +186,8 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: 0px 4px 5px rgba(246, 246, 246, 1);
-    margin-bottom: 26px;
+    position: fixed;
+    z-index: 999;
 }
 
 .main_content_header a{
@@ -187,10 +203,11 @@ body {
 
 .main_content_items {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 24px;
     margin: 0 24px;
 }
+
 
 
 .ventas, .compras h3 {
@@ -204,10 +221,14 @@ body {
 }
 
 .reciente {
+    max-width: 347px;
     width: 100%;
-    height: auto;
+    height: 100vh;
+    margin-top: 87px;
     background-color: rgba(68, 79, 97, 1);
     border-radius: 5px 5px 0px 0px;
+    position: fixed;
+    right: 0;
 }
 
 .reciente_box {
@@ -215,13 +236,17 @@ body {
     position: relative;
 }
 .reciente_box::before {
-    position: absolute;
-    content: " ";
-    bottom: 0;
-    left: 28px;
-    width: 68%;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 1);
+	position: absolute;
+	content: " ";
+	bottom: 0;
+	left: 28px;
+	width: 73%;
+	height: 1px;
+	background-color: rgba(255, 255, 255, 1);
 }
+
+
+
+
 
 
