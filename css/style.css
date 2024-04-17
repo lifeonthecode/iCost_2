@@ -144,7 +144,6 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 114px auto 347px;
-    /* padding-top: 4px; */
 
 }
 
